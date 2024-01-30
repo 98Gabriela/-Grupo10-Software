@@ -1,5 +1,10 @@
 # -Grupo10-Software
 Implementación del backend de la aplicación cajero automatico, utilizando frameworks: Springboot y Java
+
+# REQUISITOS
+SPRING BOOT
+REACT
+MYSQL WORBENCH
 # REQUERIMIENTOS
  Requerimientos Funcionales
 1.1.1.Configuración

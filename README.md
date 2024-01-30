@@ -5,6 +5,9 @@ Implementación del backend de la aplicación cajero automatico, utilizando fram
 SPRING BOOT
 REACT
 MYSQL WORBENCH
+#EN EL FRONT DE REACT INSTALAR
+npm install axios
+
 # REQUERIMIENTOS
  Requerimientos Funcionales
 1.1.1.Configuración

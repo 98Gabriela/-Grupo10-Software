@@ -1,5 +1,6 @@
 # -Grupo10-Software
 Implementación del backend de la aplicación cajero automatico, utilizando frameworks: Springboot y Java
+# REQUERIMIENTOS
  Requerimientos Funcionales
 1.1.1.Configuración
 1.1.1.1. Usuarios y perfiles de acceso.
@@ -113,7 +114,8 @@ transacciones y operaciones realizadas cumplan con los estándares establecidos
 Mantenibilidad: El sistema debe ser mantenible y fácil de actualizar. Debe permitir la implementación
 de correcciones de errores, mejoras funcionales y actualizaciones de seguridad sin afectar
 significativamente la disponibilidad y el rendimiento del sistema
-4. DESCRIPCIÓN DEL DISEÑO
+# DISEÑO
+DESCRIPCIÓN DEL DISEÑO
 Arquitectura del sistema: El diseño del sistema debe considerar una arquitectura sólida y escalable.
 Puede seguir un enfoque de arquitectura cliente-servidor, donde los usuarios acceden al sistema a través
 de interfaces de cliente, que se conectan a un servidor centralizado que almacena y procesa los datos.

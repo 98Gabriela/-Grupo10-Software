@@ -1,0 +1,29 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const ListarCuentas = () => {
+  const [cuentas, setCuentas] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:8080/api/cuentas')
+      .then(response => {
+        setCuentas(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching cuentas', error);
+      });
+  }, []);
+
+  return (
+    <div>
+      <h2>Listar Cuentas</h2>
+      <ul>
+        {cuentas.map(cuenta => (
+          <li key={cuenta.id}>{cuenta.nombre} - {cuenta.precio}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ListarCuentas;

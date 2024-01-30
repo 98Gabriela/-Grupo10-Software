@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const CrearCuenta = () => {
+  const [nombre, setNombre] = useState('');
+  const [precio, setPrecio] = useState('');
+
+  const handleGuardarCuenta = () => {
+    axios.post('http://localhost:8080/api/cuentas', { nombre, precio })
+      .then(response => {
+        console.log('Cuenta creada:', response.data);
+        // Puedes redirigir a la página de listado o realizar otras acciones después de guardar
+      })
+      .catch(error => {
+        console.error('Error al crear cuenta', error);
+      });
+  };
+
+  return (
+    <div>
+      <h2>Crear Cuenta</h2>
+      <label>Nombre: </label>
+      <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+      <br />
+      <label>Precio: </label>
+      <input type="text" value={precio} onChange={(e) => setPrecio(e.target.value)} />
+      <br />
+      <button onClick={handleGuardarCuenta}>Guardar Cuenta</button>
+    </div>
+  );
+};
+
+export default CrearCuenta;
